@@ -16,19 +16,17 @@
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $ventas = $_POST["ventas"];
 
-        if ($ventas > 80) {
+        if ($ventas >= 80) {
             $imagen = "semaforo_verde.png";
-            $mensaje = "¡Feliz!";
         } elseif ($ventas >= 50 && $ventas <= 79) {
             $imagen = "semaforo_amarillo.png";
-            $mensaje = "Aburrido";
         } else {
             $imagen = "semaforo_rojo.png";
-            $mensaje = "Triste";
+
         }
 
-        echo "<p>Tu desempeño de ventas está en $ventas%. Estás $mensaje.</p>";
-        echo "<img src='img/$imagen' alt='$mensaje'>";
+        echo "<p>Tu desempeño de ventas está en $ventas%.</p>";
+        echo "<img src='img/$imagen'>";
     }
     ?>
 </body>
