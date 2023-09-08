@@ -16,7 +16,7 @@
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $ventas = $_POST["ventas"];
 
-        if ($ventas >= 80) {
+        if ($ventas > 80) {
             $imagen = "semaforo_verde.png";
         } elseif ($ventas >= 50 && $ventas <= 79) {
             $imagen = "semaforo_amarillo.png";
