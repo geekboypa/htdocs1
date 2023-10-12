@@ -46,7 +46,7 @@
         $p = round(($votos2/$total_v)*100,2);
 
         print("<TR>\n");
-        print("<TD CLASS = 'izquierda'>Si</TD>\n");
+        print("<TD CLASS = 'izquierda'>No</TD>\n");
         print("<TD CLASS = 'derecha'>$votos2</TD>\n");
         print("<TD CLASS = 'derecha'>$p%</TD>\n");
         $p=$p*4;

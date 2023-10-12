@@ -26,11 +26,11 @@
             print("<TD>" . $resultado['titulo'] . "</TD>\n");
             print("<TD>" . $resultado['texto'] . "</TD>\n");
             print("<TD>" . $resultado['categoria'] . "</TD>\n");
-            print("<TD>" . date("j/n/Y", strtotime($resultado['fecha'])) . "</TD>\n");
+            print("<TD>" . date("j/n/Y", strtotime($resultado['fechas'])) . "</TD>\n");
             if ($resultado['imagen'] != "") {
                 print("<TD><A TARGET='_blank' HREF='img/" . $resultado['imagen'] . " '><IMG BORDER= '0' SRC='img/iconotexto.gif'></A></TD>\n");
             } else {
-                print("<TD>&nbspx</TD>\n");
+                print("<TD>&nbsp;</TD>\n");
             }
             print("</TR>\n");
         }
